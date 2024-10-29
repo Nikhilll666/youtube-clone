@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #5a5a5a;
+}
+
+img{
+    cursor: pointer;
+}
+html,body{
+    width: 100%;
+    height: 100vh;
+    padding: 5px 15px;
+}
+
+nav{
+    display: flex;
+    width: 97vw;
+    position: sticky;
+    padding-bottom: 20px;
+}
+.nav_left{
+    /* padding-top: 50px; */
+    width: 20%;
+    display: flex;
+    gap: 30px;
+
+    i{
+        font-size: 30px;
+        font-weight: 100;
+        align-self: center;
+    }
+
+    h2{
+        font-weight: 600;
+        font-size: 25px;
+        align-self: center;
+        letter-spacing: -1px;
+
+        sup{
+            font-weight: 300;
+        }
+    }
+}
+.logosec{
+    display: flex;
+    align-self: center;
+}
+
+.nav_middle{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search{
+    width: 37rem;
+    height: 2.5rem;
+    border-radius: 30px;
+    border: 1px solid #8282829d;
+    display: flex;
+    justify-content: space-between;
+}
+.nav_middle input{
+    border: none;
+    background: transparent;
+}
+
+.nav_middle input::placeholder{
+    font-size: 23px;
+    padding: 20px;
+}
+.search i{
+    border-left: 1px solid grey;
+    font-size: 25px;
+    padding: 11px;   
+    padding-left: 25px;
+    color: rgb(83, 78, 78);
+}
+#mic{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    padding: 15px;
+    border-radius: 50%;
+    background-color: rgba(128, 128, 128, 0.13);
+    margin-left: 20px;
+}
+
+.nav_right{
+    width: 20%;
+    display: flex;
+    gap: 25px;
+    padding-left: 5rem;
+}
+.create{
+    display: flex;
+    gap: 10px;
+    background-color: rgba(128, 128, 128, 0.13);
+    padding: 5px 15px;
+    border-radius: 30px;
+}
+.create i{
+    font-size: 27px;
+    font-weight: 100;
+    align-self: center;
+    color: rgb(83, 78, 78);
+
+}
+.create h3{
+    align-self: center;
+    font-weight: 500;
+    font-size: 18px;
+    color: rgb(22, 21, 21);
+    
+}
+.nav_right img{
+    border-radius: 50%;
+    align-self: center;
+}
+.nav_right #notification{
+    font-size: 30px;
+    align-self: center;
+}
+
+/* ---------- sideBAr ------------ */
+
+.sidebar{
+    width: 15vw;
+    height: fit-content;
+    padding-top: 40px;
+    position: sticky;
+}
+.sidebar_links{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: fit-content;
+}
+.sidebar_links a{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    width: fit-content;
+    flex-wrap: wrap;
+}
+.sidebar_links a p{
+    color: #000 ;
+}
+hr{
+    width: 90%;
+    margin: 20px 0;
+}
+
+.sidebar_links img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.about a p{
+    line-height: 1rem;
+    word-spacing: 10px;
+    font-size: 17px;
+}
+.about .lcc p{
+    font-size: 15px;
+}
+.maindiv{
+    display: flex;
+}
+
+.main_nav{
+    overflow: hidden;
+    height: fit-content;
+    width: 95vw;
+    height: 5%;
+    padding-left: 10px ;
+}
+.main_nav ul{
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    overflow-x: scroll;
+    scrollbar-width: none;
+}
+.main_nav ul::-webkit-scrollbar{
+    display: none;
+}
+
+.main_nav ul a{
+    padding: 12px 24px;
+    display: inline-block;
+    user-select: none;
+    white-space: nowrap;
+    background-color: rgba(128, 128, 128, 0.13);
+    border-radius: 15px;
+    color: #000;
+}
+.vid_list{
+    width: 35%;
+    height: fit-content;
+    /* background-color: aquamarine; */
+    padding: 20px;
+}
+.vid_list img{
+    width: 24rem;
+    height: 15rem;
+    border-radius: 30px;
+    margin: 10px 5px;
+}
+.vid_list a img{
+    width: 30px;
+    height: 30px;
+}
+.about_video a{
+    display: flex;
+    gap: 30px;
+}
+.about_video a p{
+    color: #000;
+    font-size: 18px;
+}
+
+.list_container{
+    display: flex;
+}
+
